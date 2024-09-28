@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\workoutspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:workoutspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\workoutspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:workoutspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-28T12:02:36.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorkoutsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutsPage.xaml",
+              "RelativeDocumentMoniker": "WorkoutsPage.xaml",
+              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutsPage.xaml",
+              "RelativeToolTip": "WorkoutsPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-28T11:58:18.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkoutsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutsPage.xaml.cs",
+              "RelativeDocumentMoniker": "WorkoutsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutsPage.xaml.cs",
+              "RelativeToolTip": "WorkoutsPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T11:57:50.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\MainPage.xaml*",
+              "RelativeToolTip": "MainPage.xaml*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-28T11:53:17.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T11:52:06.274Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

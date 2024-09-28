@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyProject.WorkoutsPage"
+             Title="WorkoutsPage">
+    <ContentPage.ToolbarItems>
+        <!--Кнопка меню-->
+        <ToolbarItem Text="Menu" Command="{Binding FlyoutCommand}"/>
+        <!--Кнопка назад-->
+        <ToolbarItem Text="Back" Priority="0" Clicked="OnBackClicked"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <Label Text="воракаунт"></Label>
+    </StackLayout>
+</ContentPage>

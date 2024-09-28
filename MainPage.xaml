@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyProject.MainPage">
+
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Меню">
+            <StackLayout>
+                <Label Text="Меню" FontSize="24" Padding="10" HorizontalTextAlignment="Center"></Label>
+                <!-- Ссылки на страницы-->
+                <Button Text="Главная" Clicked="OnHomeClicked"></Button>
+                <Button Text="Тренировки" Clicked="OnPageWorkoutsClicked"></Button>
+                <Button Text="Достижения" Clicked="OnPageAchievementsClicked"></Button>
+                <Button Text="Монитроинг здоровья" Clicked="OnPageHealthMonitoringClicked"></Button>
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    
+    
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Title="Главная">
+                    <StackLayout>
+                        <Label Text="Приветствуем, ЙОУ"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontSize="24"
+                       Margin="0,20,0,20"/>
+                        <Label Text="{Binding CurrentDate, StringFormat='Сегодня: {0:MMMM dd, yyyy}'}"
+               FontSize="Medium"
+               HorizontalOptions="Center"/>
+                        <Button Text="Начать тренировки" Clicked="OnPageWorkoutsClicked"></Button>
+                        <Button Text="Мои достижения" Clicked="OnPageAchievementsClicked"></Button>
+                    </StackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
