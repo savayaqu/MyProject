@@ -4,10 +4,9 @@ namespace MyProject;
 
 public partial class HealthMonitoringPage : ContentPage
 {
-
-    public Command FlyoutCommand { get; set; }
+    public ICommand FlyoutCommand { get; set; }
     public HealthProfile HealthProfile { get; set; }
-    public Command SaveCommand { get; set; }
+    public ICommand SaveCommand { get; set; }
 
     public HealthMonitoringPage()
     {
@@ -20,17 +19,27 @@ public partial class HealthMonitoringPage : ContentPage
                 flyoutPage.IsPresented = true;
             }
         });
-       
+
+        // Инициализация HealthProfile и установка его в качестве BindingContext
         HealthProfile = new HealthProfile();
-        SaveCommand = new Command(OnSave);
+        SaveCommand = new Command(OnSave); // Привязываем команду SaveCommand
 
         BindingContext = this;
     }
 
-    public void OnSave()
+    private void OnSave()
     {
-        DisplayAlert("Успешно", "Ваши данные сохранены!", "OK");
-
+        // Проверяем, заданы ли значения для веса и роста
+        if (HealthProfile.Weight > 0 && HealthProfile.Height > 0)
+        {
+            // Отображаем метку с ИМТ
+            BmiLabel.IsVisible = true;
+            DisplayAlert("Успешно", $"Ваш ИМТ: {HealthProfile.BMI:F2}", "OK");
+        }
+        else
+        {
+            DisplayAlert("Ошибка", "Пожалуйста, введите корректные значения для веса и роста.", "OK");
+        }
     }
 
     private async void OnBackClicked(object sender, EventArgs e)

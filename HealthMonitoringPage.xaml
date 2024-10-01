@@ -10,29 +10,27 @@
 
     <StackLayout Padding="20">
         <Label Style="{StaticResource HeaderStyle}"
-            Text="Мой мониторинг"
-            FontSize="24"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
+               Text="Мой мониторинг"
+               FontSize="24"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
 
         <Entry 
-    Placeholder="Введите вес (кг)" 
-    Keyboard="Numeric" 
-    Text="{Binding Weight, Mode=TwoWay}"
-    x:Name="weight"/>
+            Placeholder="Введите вес (кг)" 
+            Keyboard="Numeric" 
+            Text="{Binding HealthProfile.Weight, Mode=TwoWay}" />
 
         <Entry 
-    Placeholder="Введите рост (см)" 
-    Keyboard="Numeric" 
-    Text="{Binding Height, Mode=TwoWay}"
-    x:Name="height"/>
+            Placeholder="Введите рост (см)" 
+            Keyboard="Numeric" 
+            Text="{Binding HealthProfile.Height, Mode=TwoWay}" />
 
         <Button Style="{StaticResource CustomButtonStyle}"
-            Text="Сохранить" 
-            Command="{Binding SaveCommand}" />
+                Text="Сохранить" 
+                Command="{Binding SaveCommand}" />
 
         <Label 
-            Text="{Binding BMI, StringFormat='Индекс массы тела: {0:F2}'}"
+            Text="{Binding HealthProfile.BMI, StringFormat='Индекс массы тела: {0:F2}'}"
             FontSize="18"
             VerticalOptions="Center"
             HorizontalOptions="Center" 

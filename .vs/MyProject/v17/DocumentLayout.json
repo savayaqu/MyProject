@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\achievementspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:achievementspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\healthmonitoringpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:healthmonitoringpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\achievementspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:achievementspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\healthmonitoringpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:healthmonitoringpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\workoutimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:workoutimageconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\workoutspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:workoutspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\workoutspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:workoutspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|c:\\users\\zaikin-va\\desktop\\myproject\\healthprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B626EBA9-75E7-4F7F-AA68-3EF2535DBE89}|MyProject.csproj|solutionrelative:healthprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,92 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AchievementsPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\AchievementsPage.xaml.cs",
-              "RelativeDocumentMoniker": "AchievementsPage.xaml.cs",
-              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\AchievementsPage.xaml.cs",
-              "RelativeToolTip": "AchievementsPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HealthProfile.cs",
+              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\HealthProfile.cs",
+              "RelativeDocumentMoniker": "HealthProfile.cs",
+              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\HealthProfile.cs",
+              "RelativeToolTip": "HealthProfile.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T12:53:05.833Z",
+              "WhenOpened": "2024-10-01T05:26:02.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WorkoutImageConverter.cs",
-              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutImageConverter.cs",
-              "RelativeDocumentMoniker": "WorkoutImageConverter.cs",
-              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutImageConverter.cs",
-              "RelativeToolTip": "WorkoutImageConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T12:48:47.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Styles.xaml",
-              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\Resources\\Styles\\Styles.xaml",
-              "RelativeDocumentMoniker": "Resources\\Styles\\Styles.xaml",
-              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\Resources\\Styles\\Styles.xaml",
-              "RelativeToolTip": "Resources\\Styles\\Styles.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T12:15:19.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\MainPage.xaml",
-              "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAACOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T12:14:52.768Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AchievementsPage.xaml",
-              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\AchievementsPage.xaml",
-              "RelativeDocumentMoniker": "AchievementsPage.xaml",
-              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\AchievementsPage.xaml",
-              "RelativeToolTip": "AchievementsPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T12:10:22.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WorkoutsPage.xaml",
-              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutsPage.xaml",
-              "RelativeDocumentMoniker": "WorkoutsPage.xaml",
-              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutsPage.xaml",
-              "RelativeToolTip": "WorkoutsPage.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T12:05:43.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WorkoutsPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutsPage.xaml.cs",
-              "RelativeDocumentMoniker": "WorkoutsPage.xaml.cs",
-              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\WorkoutsPage.xaml.cs",
-              "RelativeToolTip": "WorkoutsPage.xaml.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAADwvy4AAAAEAAAAAAAAAA==",
+              "Title": "HealthMonitoringPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\HealthMonitoringPage.xaml.cs",
+              "RelativeDocumentMoniker": "HealthMonitoringPage.xaml.cs",
+              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\HealthMonitoringPage.xaml.cs",
+              "RelativeToolTip": "HealthMonitoringPage.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwB0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T11:58:38.396Z"
+              "WhenOpened": "2024-10-01T05:25:51.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HealthMonitoringPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\HealthMonitoringPage.xaml",
+              "RelativeDocumentMoniker": "HealthMonitoringPage.xaml",
+              "ToolTip": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\HealthMonitoringPage.xaml",
+              "RelativeToolTip": "HealthMonitoringPage.xaml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-01T05:25:33.696Z",
+              "EditorCaption": ""
             }
           ]
         }
