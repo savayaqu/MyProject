@@ -2,10 +2,13 @@
 {
     public partial class MainPage : FlyoutPage
     {
+        public string CurrentDate { get; set; }
 
         public MainPage()
         {
             InitializeComponent();
+            CurrentDate = DateTime.Now.ToString("MMMM dd, yyyy");
+            BindingContext = this;
         }
 
         private async void OnHomeClicked(object sender, EventArgs e)

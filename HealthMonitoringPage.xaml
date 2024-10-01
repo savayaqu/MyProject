@@ -2,11 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyProject.HealthMonitoringPage"
-             Title="HealthMonitoringPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
+             Title="Мониторинг здоровья">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Menu" Command="{Binding FlyoutCommand}"/>
+        <ToolbarItem Text="Back" Priority="0" Clicked="OnBackClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Padding="20">
+        <Label Style="{StaticResource HeaderStyle}"
+            Text="Мой мониторинг"
+            FontSize="24"
+            VerticalOptions="Center"
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+        <Entry 
+    Placeholder="Введите вес (кг)" 
+    Keyboard="Numeric" 
+    Text="{Binding Weight, Mode=TwoWay}"
+    x:Name="weight"/>
+
+        <Entry 
+    Placeholder="Введите рост (см)" 
+    Keyboard="Numeric" 
+    Text="{Binding Height, Mode=TwoWay}"
+    x:Name="height"/>
+
+        <Button Style="{StaticResource CustomButtonStyle}"
+            Text="Сохранить" 
+            Command="{Binding SaveCommand}" />
+
+        <Label 
+            Text="{Binding BMI, StringFormat='Индекс массы тела: {0:F2}'}"
+            FontSize="18"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+            IsVisible="False"
+            x:Name="BmiLabel" />
+    </StackLayout>
 </ContentPage>

@@ -2,11 +2,32 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyProject.AchievementsPage"
-             Title="AchievementsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
+             Title="Достижения">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Меню" Command="{Binding FlyoutCommand}"/>
+        <ToolbarItem Text="Назад" Priority="0" Clicked="OnBackClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Label Style="{StaticResource HeaderStyle}"
+            Text="Мои достижения"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+        <ListView ItemsSource="{Binding Achievements}" HasUnevenRows="True" SeparatorVisibility="Default" Style="{Binding ListItemStyle}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="10" Margin="0,0,0,10" BorderColor="#BDC3C7" BackgroundColor="#ECF0F1" CornerRadius="8">
+                            <VerticalStackLayout Padding="10">
+                                <Label Text="{Binding Description}" VerticalOptions="Center" />
+                                <Label Text="{Binding Date}" VerticalOptions="Center" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Style="{StaticResource CustomButtonStyle}" Text="Добавить достижение" Clicked="OnAddAchievementClicked" HorizontalOptions="EndAndExpand" />
+    </StackLayout>
 </ContentPage>

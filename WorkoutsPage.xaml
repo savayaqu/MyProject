@@ -1,15 +1,35 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyProject"
              x:Class="MyProject.WorkoutsPage"
-             Title="WorkoutsPage">
+             Title="Тренировки">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:WorkoutImageConverter x:Key="WorkoutImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.ToolbarItems>
-        <!--Кнопка меню-->
-        <ToolbarItem Text="Menu" Command="{Binding FlyoutCommand}"/>
-        <!--Кнопка назад-->
-        <ToolbarItem Text="Back" Priority="0" Clicked="OnBackClicked"/>
+        <ToolbarItem Text="Меню" Command="{Binding FlyoutCommand}"/>
+        <ToolbarItem Text="Назад" Priority="0" Clicked="OnBackClicked"/>
     </ContentPage.ToolbarItems>
-    <StackLayout>
-        <Label Text="воракаунт"></Label>
+
+    <StackLayout Spacing="10">
+        <Label Style="{StaticResource HeaderStyle}" Text="Доступные тренировки" FontSize="24" HorizontalOptions="Center" Padding="15"/>
+
+        <ListView ItemsSource="{Binding Workouts}" HasUnevenRows="True" SeparatorVisibility="Default" Style="{Binding ListItemStyle}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10" Margin="0,0,0,10">
+                            <Image Source="{Binding Name, Converter={StaticResource WorkoutImageConverter}}" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" />
+                            <Label Text="{Binding Name}" FontSize="18" VerticalOptions="Center" Margin="10,0,0,0"/>
+                            <Label Text="{Binding Duration}" FontSize="16" VerticalOptions="Center" Margin="10,0,0,0"/>
+                            <Button Style="{StaticResource CustomButtonStyle}" Text="Начать" Clicked="OnStartWorkoutClicked" HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
 </ContentPage>

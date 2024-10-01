@@ -4,35 +4,35 @@
              x:Class="MyProject.MainPage">
 
     <FlyoutPage.Flyout>
-        <ContentPage Title="Меню">
-            <StackLayout>
+        <ContentPage Title="Меню" >
+            <StackLayout Spacing="15">
                 <Label Text="Меню" FontSize="24" Padding="10" HorizontalTextAlignment="Center"></Label>
                 <!-- Ссылки на страницы-->
-                <Button Text="Главная" Clicked="OnHomeClicked"></Button>
-                <Button Text="Тренировки" Clicked="OnPageWorkoutsClicked"></Button>
-                <Button Text="Достижения" Clicked="OnPageAchievementsClicked"></Button>
-                <Button Text="Монитроинг здоровья" Clicked="OnPageHealthMonitoringClicked"></Button>
+                <Button Style="{StaticResource CustomButtonStyle}" Text="Главная" Clicked="OnHomeClicked"></Button>
+                <Button Style="{StaticResource CustomButtonStyle}" Text="Тренировки" Clicked="OnPageWorkoutsClicked"></Button>
+                <Button Style="{StaticResource CustomButtonStyle}" Text="Достижения" Clicked="OnPageAchievementsClicked"></Button>
+                <Button Style="{StaticResource CustomButtonStyle}" Text="Мониторинг здоровья" Clicked="OnPageHealthMonitoringClicked"></Button>
             </StackLayout>
         </ContentPage>
     </FlyoutPage.Flyout>
     
     
     <FlyoutPage.Detail>
-        <NavigationPage>
+        <NavigationPage BarBackgroundColor="Green">
             <x:Arguments>
-                <ContentPage Title="Главная">
-                    <StackLayout>
-                        <Label Text="Приветствуем, ЙОУ"
+                <ContentPage Title="Главная" Style="{StaticResource HeaderStyle}">
+                    <VerticalStackLayout Padding="20" Spacing="20">
+                        <Label Text="Приветствуем"
                        VerticalOptions="Center"
                        HorizontalOptions="Center"
                        FontSize="24"
-                       Margin="0,20,0,20"/>
-                        <Label Text="{Binding CurrentDate, StringFormat='Сегодня: {0:MMMM dd, yyyy}'}"
-               FontSize="Medium"
-               HorizontalOptions="Center"/>
-                        <Button Text="Начать тренировки" Clicked="OnPageWorkoutsClicked"></Button>
-                        <Button Text="Мои достижения" Clicked="OnPageAchievementsClicked"></Button>
-                    </StackLayout>
+                       />
+                        <Label Text="{Binding CurrentDate, StringFormat='Сегодня: {0}'}"
+       FontSize="Medium"
+       HorizontalOptions="Center"/>
+                        <Button Style="{StaticResource CustomButtonStyle}" Text="Начать тренировки" Clicked="OnPageWorkoutsClicked"></Button>
+                        <Button Style="{StaticResource CustomButtonStyle}" Text="Мои достижения" Clicked="OnPageAchievementsClicked"></Button>
+                    </VerticalStackLayout>
                 </ContentPage>
             </x:Arguments>
         </NavigationPage>
