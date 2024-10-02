@@ -1,8 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyProject"
              x:Class="MyProject.WorkoutsPage"
-             Title="Тренировки">
+             Title="Тренировки"
+             BackgroundColor="#E0F7FA">
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:WorkoutImageConverter x:Key="WorkoutImageConverter" />
@@ -10,23 +13,45 @@
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Меню" Command="{Binding FlyoutCommand}"/>
-        <ToolbarItem Text="Назад" Priority="0" Clicked="OnBackClicked"/>
+        <ToolbarItem Text="Меню" Command="{Binding FlyoutCommand}" IconImageSource="menu_icon.png"/>
+        <ToolbarItem Text="Назад" Priority="0" Clicked="OnBackClicked" IconImageSource="back_icon.png"/>
     </ContentPage.ToolbarItems>
 
-    <StackLayout Spacing="10">
-        <Label Style="{StaticResource HeaderStyle}" Text="Доступные тренировки" FontSize="24" HorizontalOptions="Center" Padding="15"/>
+    <StackLayout Spacing="10" Padding="15">
+        <Label Style="{StaticResource HeaderStyle}" 
+               Text="Доступные тренировки" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               TextColor="#00796B" 
+               Padding="15"/>
 
-        <ListView ItemsSource="{Binding Workouts}" HasUnevenRows="True" SeparatorVisibility="Default" Style="{Binding ListItemStyle}">
+        <ListView ItemsSource="{Binding Workouts}" HasUnevenRows="True" SeparatorVisibility="Default" BackgroundColor="Transparent">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="10" Margin="0,0,0,10">
-                            <Image Source="{Binding Name, Converter={StaticResource WorkoutImageConverter}}" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" />
-                            <Label Text="{Binding Name}" FontSize="18" VerticalOptions="Center" Margin="10,0,0,0"/>
-                            <Label Text="{Binding Duration}" FontSize="16" VerticalOptions="Center" Margin="10,0,0,0"/>
-                            <Button Style="{StaticResource CustomButtonStyle}" Text="Начать" Clicked="OnStartWorkoutClicked" HorizontalOptions="EndAndExpand" />
-                        </StackLayout>
+                        <Frame Padding="10" Margin="0,0,0,10" BorderColor="#B2DFDB" BackgroundColor="#FFFFFF" CornerRadius="8" HasShadow="True">
+                            <StackLayout Orientation="Horizontal" Padding="10" BackgroundColor="#E0F2F1">
+                                <Image Source="{Binding Name, Converter={StaticResource WorkoutImageConverter}}" 
+                                       WidthRequest="50" 
+                                       HeightRequest="50" 
+                                       Aspect="AspectFit" 
+                                       Margin="5"/>
+                                <StackLayout Spacing="5" VerticalOptions="Center">
+                                    <Label Text="{Binding Name}" 
+                                           FontSize="18" 
+                                           TextColor="#004D40"/>
+                                    <Label Text="{Binding Duration}" 
+                                           FontSize="16" 
+                                           TextColor="#00796B"/>
+                                </StackLayout>
+                                <Button Style="{StaticResource CustomButtonStyle}" 
+                                        Text="Начать" 
+                                        Clicked="OnStartWorkoutClicked" 
+                                        HorizontalOptions="EndAndExpand" 
+                                        BackgroundColor="#4DB6AC"
+                                        TextColor="White"/>
+                            </StackLayout>
+                        </Frame>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

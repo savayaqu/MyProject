@@ -2,32 +2,42 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyProject.AchievementsPage"
-             Title="Достижения">
+             Title="Достижения"
+             BackgroundColor="#E0F7FA">
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Меню" Command="{Binding FlyoutCommand}"/>
-        <ToolbarItem Text="Назад" Priority="0" Clicked="OnBackClicked"/>
+        <ToolbarItem Text="Меню" Command="{Binding FlyoutCommand}" IconImageSource="menu_icon.png"/>
+        <ToolbarItem Text="Назад" Priority="0" Clicked="OnBackClicked" IconImageSource="back_icon.png"/>
     </ContentPage.ToolbarItems>
 
-    <StackLayout>
+    <StackLayout Padding="20" Spacing="20">
         <Label Style="{StaticResource HeaderStyle}"
-            Text="Мои достижения"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+               Text="Мои достижения"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               FontSize="24"
+               TextColor="#00796B" />
 
-        <ListView ItemsSource="{Binding Achievements}" HasUnevenRows="True" SeparatorVisibility="Default" Style="{Binding ListItemStyle}">
+        <ListView ItemsSource="{Binding Achievements}" HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="White" Margin="0,10,0,10">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Frame Padding="10" Margin="0,0,0,10" BorderColor="#BDC3C7" BackgroundColor="#ECF0F1" CornerRadius="8">
+                        <Frame Padding="10" Margin="0,0,0,10" BorderColor="#00796B" BackgroundColor="#B2DFDB" CornerRadius="8" HasShadow="True">
                             <VerticalStackLayout Padding="10">
-                                <Label Text="{Binding Description}" VerticalOptions="Center" />
-                                <Label Text="{Binding Date}" VerticalOptions="Center" />
+                                <Label Text="{Binding Description}" VerticalOptions="Center" TextColor="#004D40" FontSize="18"/>
+                                <Label Text="{Binding Date}" VerticalOptions="Center" TextColor="#004D40" FontSize="14"/>
                             </VerticalStackLayout>
                         </Frame>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Style="{StaticResource CustomButtonStyle}" Text="Добавить достижение" Clicked="OnAddAchievementClicked" HorizontalOptions="EndAndExpand" />
+
+        <Button Style="{StaticResource CustomButtonStyle}" 
+                Text="Добавить достижение" 
+                Clicked="OnAddAchievementClicked" 
+                HorizontalOptions="EndAndExpand"
+                BackgroundColor="#4DB6AC" 
+                TextColor="White"/>
     </StackLayout>
 </ContentPage>

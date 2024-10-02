@@ -2,39 +2,58 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyProject.HealthMonitoringPage"
-             Title="Мониторинг здоровья">
+             Title="Мониторинг здоровья"
+             BackgroundColor="#E0F7FA">
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Menu" Command="{Binding FlyoutCommand}"/>
-        <ToolbarItem Text="Back" Priority="0" Clicked="OnBackClicked"/>
+        <ToolbarItem Text="Меню" Command="{Binding FlyoutCommand}" IconImageSource="menu_icon.png"/>
+        <ToolbarItem Text="Назад" Priority="0" Clicked="OnBackClicked" IconImageSource="back_icon.png"/>
     </ContentPage.ToolbarItems>
 
-    <StackLayout Padding="20">
+    <StackLayout Padding="20" Spacing="20">
         <Label Style="{StaticResource HeaderStyle}"
                Text="Мой мониторинг"
                FontSize="24"
                VerticalOptions="Center"
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center"
+               TextColor="#00796B" />
 
         <Entry 
             Placeholder="Введите вес (кг)" 
             Keyboard="Numeric" 
-            Text="{Binding HealthProfile.Weight, Mode=TwoWay}" />
+            Text="{Binding HealthProfile.Weight, Mode=TwoWay}" 
+            FontSize="18"
+            BackgroundColor="#B2DFDB"
+            TextColor="#004D40"
+            Margin="0,10,0,10"
+            HeightRequest="40"
+            />
 
         <Entry 
             Placeholder="Введите рост (см)" 
             Keyboard="Numeric" 
-            Text="{Binding HealthProfile.Height, Mode=TwoWay}" />
+            Text="{Binding HealthProfile.Height, Mode=TwoWay}"
+            FontSize="18"
+            BackgroundColor="#B2DFDB"
+            TextColor="#004D40"
+            Margin="0,10,0,10"
+            HeightRequest="40"
+            />
 
         <Button Style="{StaticResource CustomButtonStyle}"
                 Text="Сохранить" 
-                Command="{Binding SaveCommand}" />
+                Command="{Binding SaveCommand}"
+                BackgroundColor="#4DB6AC"
+                TextColor="White"
+                FontSize="18"/>
 
         <Label 
             Text="{Binding HealthProfile.BMI, StringFormat='Индекс массы тела: {0:F2}'}"
             FontSize="18"
             VerticalOptions="Center"
             HorizontalOptions="Center" 
-            IsVisible="False"
+            TextColor="#00796B"
+            Margin="0,10,0,10"
             x:Name="BmiLabel" />
     </StackLayout>
 </ContentPage>

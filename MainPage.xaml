@@ -4,34 +4,46 @@
              x:Class="MyProject.MainPage">
 
     <FlyoutPage.Flyout>
-        <ContentPage Title="Меню" >
+        <ContentPage Title="Меню" BackgroundColor="#E0F7FA">
             <StackLayout Spacing="15">
-                <Label Text="Меню" FontSize="24" Padding="10" HorizontalTextAlignment="Center"></Label>
+                <Label Text="Меню" 
+                       FontSize="24" 
+                       Padding="10" 
+                       HorizontalTextAlignment="Center"
+                       TextColor="#00796B"/>
                 <!-- Ссылки на страницы-->
-                <Button Style="{StaticResource CustomButtonStyle}" Text="Главная" Clicked="OnHomeClicked"></Button>
-                <Button Style="{StaticResource CustomButtonStyle}" Text="Тренировки" Clicked="OnPageWorkoutsClicked"></Button>
-                <Button Style="{StaticResource CustomButtonStyle}" Text="Достижения" Clicked="OnPageAchievementsClicked"></Button>
-                <Button Style="{StaticResource CustomButtonStyle}" Text="Мониторинг здоровья" Clicked="OnPageHealthMonitoringClicked"></Button>
+                <Button Style="{StaticResource CustomButtonStyle}" Text="Главная" Clicked="OnHomeClicked" BackgroundColor="#4DB6AC" TextColor="White"/>
+                <Button Style="{StaticResource CustomButtonStyle}" Text="Тренировки" Clicked="OnPageWorkoutsClicked" BackgroundColor="#4DB6AC" TextColor="White"/>
+                <Button Style="{StaticResource CustomButtonStyle}" Text="Достижения" Clicked="OnPageAchievementsClicked" BackgroundColor="#4DB6AC" TextColor="White"/>
+                <Button Style="{StaticResource CustomButtonStyle}" Text="Мониторинг здоровья" Clicked="OnPageHealthMonitoringClicked" BackgroundColor="#4DB6AC" TextColor="White"/>
             </StackLayout>
         </ContentPage>
     </FlyoutPage.Flyout>
-    
-    
+
     <FlyoutPage.Detail>
-        <NavigationPage BarBackgroundColor="Green">
+        <NavigationPage BarBackgroundColor="#00796B" BarTextColor="White">
             <x:Arguments>
-                <ContentPage Title="Главная" Style="{StaticResource HeaderStyle}">
+                <ContentPage Title="Главная" BackgroundColor="#E0F7FA">
                     <VerticalStackLayout Padding="20" Spacing="20">
                         <Label Text="Приветствуем"
-                       VerticalOptions="Center"
-                       HorizontalOptions="Center"
-                       FontSize="24"
-                       />
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               FontSize="24"
+                               TextColor="#00796B"/>
                         <Label Text="{Binding CurrentDate, StringFormat='Сегодня: {0}'}"
-       FontSize="Medium"
-       HorizontalOptions="Center"/>
-                        <Button Style="{StaticResource CustomButtonStyle}" Text="Начать тренировки" Clicked="OnPageWorkoutsClicked"></Button>
-                        <Button Style="{StaticResource CustomButtonStyle}" Text="Мои достижения" Clicked="OnPageAchievementsClicked"></Button>
+                               FontSize="Medium"
+                               HorizontalOptions="Center"
+                               TextColor="#004D40"/>
+                        <Button Style="{StaticResource CustomButtonStyle}" 
+                                Text="Начать тренировки" 
+                                Clicked="OnPageWorkoutsClicked" 
+                                BackgroundColor="#4DB6AC" 
+                                TextColor="White"/>
+                        <Button Style="{StaticResource CustomButtonStyle}" 
+                                Text="Мои достижения" 
+                                Clicked="OnPageAchievementsClicked" 
+                                BackgroundColor="#4DB6AC" 
+                                TextColor="White"/>
                     </VerticalStackLayout>
                 </ContentPage>
             </x:Arguments>
