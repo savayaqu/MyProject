@@ -1,52 +1,44 @@
 ﻿using System.ComponentModel;
 
-namespace MyProject
+public class HealthProfile : INotifyPropertyChanged
 {
-    public class HealthProfile : INotifyPropertyChanged
+    private double? _weight; 
+    private double? _height;
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public double? Weight
     {
-        private double weight;
-        private double height;
-        private double bmi;
-
-        public double Weight
+        get => _weight;
+        set
         {
-            get => weight;
-            set
+            if (_weight != value)
             {
-                weight = value;
+                _weight = value;
                 OnPropertyChanged(nameof(Weight));
-                OnPropertyChanged(nameof(BMI)); // Обновляем BMI при изменении веса
+                OnPropertyChanged(nameof(BMI));
             }
         }
+    }
 
-        public double Height
+    public double? Height
+    {
+        get => _height;
+        set
         {
-            get => height;
-            set
+            if (_height != value)
             {
-                height = value;
+                _height = value;
                 OnPropertyChanged(nameof(Height));
-                OnPropertyChanged(nameof(BMI)); // Обновляем BMI при изменении роста
+                OnPropertyChanged(nameof(BMI));
             }
         }
+    }
 
-        public double BMI
-        {
-            get
-            {
-                if (Height > 0)
-                {
-                    return Weight / ((Height / 100) * (Height / 100)); // Приводим рост к метрам
-                }
-                return 0;
-            }
-        }
+    public double BMI => (Height > 0) ? (Weight ?? 0) / Math.Pow((Height ?? 0) / 100, 2) : 0;
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+    protected void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

@@ -25,7 +25,7 @@
                TextColor="#00796B" 
                Padding="15"/>
 
-        <ListView ItemsSource="{Binding Workouts}" HasUnevenRows="True" SeparatorVisibility="Default" BackgroundColor="Transparent">
+        <ListView ItemsSource="{Binding Workouts}" BackgroundColor="Transparent" HasUnevenRows="True" SeparatorVisibility="None" SelectionMode="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

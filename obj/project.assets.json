@@ -32925,11 +32925,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\MyProject.csproj",
+      "projectUniqueName": "C:\\Users\\zaikin-va\\Desktop\\MyProject1\\MyProject.csproj",
       "projectName": "MyProject",
-      "projectPath": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\MyProject.csproj",
+      "projectPath": "C:\\Users\\zaikin-va\\Desktop\\MyProject1\\MyProject.csproj",
       "packagesPath": "C:\\Users\\zaikin-va\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zaikin-va\\Desktop\\MyProject\\obj\\",
+      "outputPath": "C:\\Users\\zaikin-va\\Desktop\\MyProject1\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
